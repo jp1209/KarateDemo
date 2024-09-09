@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.karatelabs'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "io.karatelabs:karate-junit5:1.5.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.9.3"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:5.9.3"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'file.encoding', 'UTF-8'
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+    }
+}
+
+// Configuración de recursos de prueba
+sourceSets {
+    test {
+        resources {
+            srcDir 'src/test/java'
+            exclude '**/*.java'
+        }
+    }
+}

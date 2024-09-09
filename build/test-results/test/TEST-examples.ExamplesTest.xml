@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.ExamplesTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-09-09T06:30:06" hostname="MacBook-Pro-de-automation.local" time="6.352">
+  <properties/>
+  <testcase name="testParallel()" classname="examples.ExamplesTest" time="6.352">
+    <failure message="org.opentest4j.AssertionFailedError: match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  'two'&#10;  'FirsTask'&#10;&#10;classpath:examples/todos/Todos.feature:48 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'two'
+  'FirsTask'
+
+classpath:examples/todos/Todos.feature:48 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at app//examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[01:30:07.395 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:30:07.400 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+01:30:07.930 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:07.930 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:07.930 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:07.930 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:07.930 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:08.057 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/todos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"title":"one","complete":false}
+
+01:30:08.057 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/todos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"title":"three","complete":false}
+
+01:30:08.057 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/todos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"title":"two","complete":false}
+
+01:30:08.057 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/api/todos
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:30:08.057 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/todos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"title":"FirsTask","complete":false}
+
+01:30:08.129 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 65
+1 < 200
+1 < content-type: application/json
+1 < content-length: 2
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+[]
+
+01:30:08.129 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 65
+1 < 200
+1 < content-type: application/json
+1 < content-length: 81
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"}
+
+01:30:08.129 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+1 < content-type: application/json
+1 < content-length: 76
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"two","complete":false,"id":"0d957583-a897-4ed9-8309-403cb3eb7a72"}
+
+01:30:08.129 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+1 < content-type: application/json
+1 < content-length: 78
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"three","complete":false,"id":"6b809e75-5866-49b0-95ed-347173542818"}
+
+01:30:08.129 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+1 < content-type: application/json
+1 < content-length: 76
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"one","complete":false,"id":"5a56610c-8f30-43b6-a740-dd50b11e44af"}
+
+01:30:08.140 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:08.142 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/todos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"title":"FirsTask","complete":false}
+
+01:30:08.146 [pool-1-thread-3] INFO  com.intuit.karate - [print] Finished iteration: 1 
+01:30:08.146 [pool-1-thread-4] INFO  com.intuit.karate - [print] Finished iteration: 2 
+01:30:08.146 [pool-1-thread-5] INFO  com.intuit.karate - [print] Finished iteration: 3 
+01:30:08.146 [pool-1-thread-2] INFO  com.intuit.karate - [print] Value of ID: ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595 
+01:30:08.149 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/api/todos/ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595
+2 > Host: localhost:8080
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+01:30:08.149 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < content-type: application/json
+1 < content-length: 81
+1 < server: Armeria/1.29.2
+1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"FirsTask","complete":false,"id":"286736f7-45b4-4768-9d04-24289ca1f9f5"}
+
+01:30:08.153 [pool-1-thread-1] INFO  com.intuit.karate - [print] Value of ID: 286736f7-45b4-4768-9d04-24289ca1f9f5 
+01:30:08.155 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8080/api/todos/286736f7-45b4-4768-9d04-24289ca1f9f5
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 33
+2 > Host: localhost:8080
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"title":"First","complete":true}
+
+01:30:08.159 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 10
+2 < 200
+2 < content-type: application/json
+2 < content-length: 81
+2 < server: Armeria/1.29.2
+2 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"}
+
+01:30:08.164 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 200
+2 < content-type: application/json
+2 < content-length: 77
+2 < server: Armeria/1.29.2
+2 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"First","complete":true,"id":"286736f7-45b4-4768-9d04-24289ca1f9f5"}
+
+01:30:08.165 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:8080/api/todos
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 35
+3 > Host: localhost:8080
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+{"title":"Second","complete":false}
+
+01:30:08.168 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > DELETE http://localhost:8080/api/todos/286736f7-45b4-4768-9d04-24289ca1f9f5
+3 > Host: localhost:8080
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+01:30:08.172 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+3 < 200
+3 < content-type: application/json
+3 < content-length: 79
+3 < server: Armeria/1.29.2
+3 < date: Mon, 9 Sep 2024 06:30:08 GMT
+{"title":"Second","complete":false,"id":"332d827d-4b65-4969-a53b-334ea8b6c71f"}
+
+01:30:08.175 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:8080/api/todos
+4 > Host: localhost:8080
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+01:30:08.179 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 11
+3 < 200
+3 < content-length: 0
+3 < server: Armeria/1.29.2
+3 < date: Mon, 9 Sep 2024 06:30:08 GMT
+
+
+01:30:08.182 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+4 < 200
+4 < content-type: application/json
+4 < content-length: 396
+4 < server: Armeria/1.29.2
+4 < date: Mon, 9 Sep 2024 06:30:08 GMT
+[{"title":"two","complete":false,"id":"0d957583-a897-4ed9-8309-403cb3eb7a72"},{"title":"three","complete":false,"id":"6b809e75-5866-49b0-95ed-347173542818"},{"title":"one","complete":false,"id":"5a56610c-8f30-43b6-a740-dd50b11e44af"},{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"},{"title":"Second","complete":false,"id":"332d827d-4b65-4969-a53b-334ea8b6c71f"}]
+
+01:30:08.196 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/todos/Todos.feature:48
+* match firstTask.title == taskName
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'two'
+  'FirsTask'
+
+classpath:examples/todos/Todos.feature:48
+---------------------------------------------------------
+feature: classpath:examples/todos/Todos.feature
+scenarios:  2 | passed:  1 | failed:  1 | time: 0.4283
+---------------------------------------------------------
+
+01:30:08.498 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/todos/Todos.feature
+---------------------------------------------------------
+feature: classpath:examples/todos/dataDriven.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 15.6508
+---------------------------------------------------------
+
+01:30:13.228 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/todos/dataDriven.feature
+---------------------------------------------------------
+feature: classpath:examples/todos/updateTodos.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0392
+---------------------------------------------------------
+
+01:30:13.270 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/todos/updateTodos.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   6.16 | threads:    5 | thread time: 16.12 
+features:     3 | skipped:    0 | efficiency: 0.52
+scenarios:    6 | passed:     5 | failed: 1
+======================================================
+>>> failed features:
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'two'
+  'FirsTask'
+
+classpath:examples/todos/Todos.feature:48
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///Users/automation/karate-workspace/karateApiTesting/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

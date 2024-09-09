@@ -1,0 +1,247 @@
+_01:30:07.395 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+^01:30:07.400 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+_01:30:07.930 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+_01:30:07.930 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+_01:30:07.930 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+_01:30:07.930 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+_01:30:07.930 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+B01:30:08.057 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+)1 > POST http://localhost:8080/api/todos
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+!{"title":"one","complete":false}
+
+B01:30:08.057 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+)1 > POST http://localhost:8080/api/todos
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+#{"title":"three","complete":false}
+
+B01:30:08.057 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+)1 > POST http://localhost:8080/api/todos
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+!{"title":"two","complete":false}
+
+B01:30:08.057 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+(1 > GET http://localhost:8080/api/todos
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+
+
+B01:30:08.057 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+)1 > POST http://localhost:8080/api/todos
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+&{"title":"FirsTask","complete":false}
+
+[01:30:08.129 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 65
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 2
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+[]
+
+[01:30:08.129 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 65
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 81
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+R{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"}
+
+[01:30:08.129 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 76
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+M{"title":"two","complete":false,"id":"0d957583-a897-4ed9-8309-403cb3eb7a72"}
+
+[01:30:08.129 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 78
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+O{"title":"three","complete":false,"id":"6b809e75-5866-49b0-95ed-347173542818"}
+
+[01:30:08.129 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 66
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 76
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+M{"title":"one","complete":false,"id":"5a56610c-8f30-43b6-a740-dd50b11e44af"}
+
+_01:30:08.140 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+B01:30:08.142 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+)1 > POST http://localhost:8080/api/todos
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"1 > Accept-Encoding: gzip,deflate
+&{"title":"FirsTask","complete":false}
+
+X01:30:08.146 [pool-1-thread-3] INFO  com.intuit.karate - [print] Finished iteration: 1 
+X01:30:08.146 [pool-1-thread-4] INFO  com.intuit.karate - [print] Finished iteration: 2 
+X01:30:08.146 [pool-1-thread-5] INFO  com.intuit.karate - [print] Finished iteration: 3 
+t01:30:08.146 [pool-1-thread-2] INFO  com.intuit.karate - [print] Value of ID: ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595 
+B01:30:08.149 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+M2 > GET http://localhost:8080/api/todos/ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595
+2 > Host: localhost:8080
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"2 > Accept-Encoding: gzip,deflate
+
+
+Z01:30:08.149 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+#1 < content-type: application/json
+1 < content-length: 81
+1 < server: Armeria/1.29.2
+'1 < date: Mon, 9 Sep 2024 06:30:08 GMT
+R{"title":"FirsTask","complete":false,"id":"286736f7-45b4-4768-9d04-24289ca1f9f5"}
+
+t01:30:08.153 [pool-1-thread-1] INFO  com.intuit.karate - [print] Value of ID: 286736f7-45b4-4768-9d04-24289ca1f9f5 
+B01:30:08.155 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+M2 > PUT http://localhost:8080/api/todos/286736f7-45b4-4768-9d04-24289ca1f9f5
+22 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 33
+2 > Host: localhost:8080
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"2 > Accept-Encoding: gzip,deflate
+"{"title":"First","complete":true}
+
+[01:30:08.159 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 10
+2 < 200
+#2 < content-type: application/json
+2 < content-length: 81
+2 < server: Armeria/1.29.2
+'2 < date: Mon, 9 Sep 2024 06:30:08 GMT
+R{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"}
+
+Z01:30:08.164 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 200
+#2 < content-type: application/json
+2 < content-length: 77
+2 < server: Armeria/1.29.2
+'2 < date: Mon, 9 Sep 2024 06:30:08 GMT
+N{"title":"First","complete":true,"id":"286736f7-45b4-4768-9d04-24289ca1f9f5"}
+
+B01:30:08.165 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+)3 > POST http://localhost:8080/api/todos
+23 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 35
+3 > Host: localhost:8080
+3 > Connection: Keep-Alive
+83 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"3 > Accept-Encoding: gzip,deflate
+${"title":"Second","complete":false}
+
+B01:30:08.168 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+P3 > DELETE http://localhost:8080/api/todos/286736f7-45b4-4768-9d04-24289ca1f9f5
+3 > Host: localhost:8080
+3 > Connection: Keep-Alive
+83 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"3 > Accept-Encoding: gzip,deflate
+
+
+Z01:30:08.172 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+3 < 200
+#3 < content-type: application/json
+3 < content-length: 79
+3 < server: Armeria/1.29.2
+'3 < date: Mon, 9 Sep 2024 06:30:08 GMT
+P{"title":"Second","complete":false,"id":"332d827d-4b65-4969-a53b-334ea8b6c71f"}
+
+B01:30:08.175 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+(4 > GET http://localhost:8080/api/todos
+4 > Host: localhost:8080
+4 > Connection: Keep-Alive
+84 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+"4 > Accept-Encoding: gzip,deflate
+
+
+[01:30:08.179 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 11
+3 < 200
+3 < content-length: 0
+3 < server: Armeria/1.29.2
+'3 < date: Mon, 9 Sep 2024 06:30:08 GMT
+
+
+Z01:30:08.182 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
+4 < 200
+#4 < content-type: application/json
+4 < content-length: 396
+4 < server: Armeria/1.29.2
+'4 < date: Mon, 9 Sep 2024 06:30:08 GMT
+[{"title":"two","complete":false,"id":"0d957583-a897-4ed9-8309-403cb3eb7a72"},{"title":"three","complete":false,"id":"6b809e75-5866-49b0-95ed-347173542818"},{"title":"one","complete":false,"id":"5a56610c-8f30-43b6-a740-dd50b11e44af"},{"title":"FirsTask","complete":false,"id":"ca4f8fb4-3cd2-42cb-aa81-f8af2c2b6595"},{"title":"Second","complete":false,"id":"332d827d-4b65-4969-a53b-334ea8b6c71f"}]
+
+c01:30:08.196 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/todos/Todos.feature:48
+$* match firstTask.title == taskName
+match failed: EQUALS
+   $ | not equal (STRING:STRING)
+  'two'
+  'FirsTask'
+
+*classpath:examples/todos/Todos.feature:48
+:---------------------------------------------------------
+0feature: classpath:examples/todos/Todos.feature
+7scenarios:  2 | passed:  1 | failed:  1 | time: 0.4283
+:---------------------------------------------------------
+
+Œ01:30:08.498 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/todos/Todos.feature
+:---------------------------------------------------------
+5feature: classpath:examples/todos/dataDriven.feature
+8scenarios:  3 | passed:  3 | failed:  0 | time: 15.6508
+:---------------------------------------------------------
+
+‘01:30:13.228 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/todos/dataDriven.feature
+:---------------------------------------------------------
+6feature: classpath:examples/todos/updateTodos.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 0.0392
+:---------------------------------------------------------
+
+’01:30:13.270 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/todos/updateTodos.feature
+Karate version: 1.5.0
+7======================================================
+6elapsed:   6.16 | threads:    5 | thread time: 16.12 
+3features:     3 | skipped:    0 | efficiency: 0.52
+,scenarios:    6 | passed:     5 | failed: 1
+7======================================================
+>>> failed features:
+match failed: EQUALS
+   $ | not equal (STRING:STRING)
+  'two'
+  'FirsTask'
+
+*classpath:examples/todos/Todos.feature:48
+<<<
+
+BHTML report: (paste into browser to view) | Karate version: 1.5.0
+dfile:///Users/automation/karate-workspace/karateApiTesting/build/karate-reports/karate-summary.html
+D===================================================================
+
